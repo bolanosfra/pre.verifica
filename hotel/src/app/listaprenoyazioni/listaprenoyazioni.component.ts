@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Booking } from '../models/booking.model';
+import { Room } from '../models/room.model';
 
 @Component({
   selector: 'app-listaprenoyazioni',
@@ -13,6 +14,11 @@ export class ListaprenoyazioniComponent implements OnInit {
 
 
   ngOnInit(): void {
+  }
+
+  mostraDett(room : Room)
+  {
+    console.log(room)
   }
 
 }

@@ -1,8 +1,9 @@
-<p>listaprenoyazioni works!</p>
+<p>listaprenoyazioni !</p>
 <div *ngFor="let b of listapreno">
     {{b.from}}<br>
     {{b.to}}<br>
     {{b.name}}<br>
     {{b.surname}}<br>
+    <button (click)="mostraDett(b.room)">mostra dettagli stanza</button>
     <hr>
 </div>
